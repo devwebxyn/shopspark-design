@@ -2,41 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Marketplace Design System - Tokopedia-inspired */
 
 @layer base {
   :root {
+    /* Brand Colors */
+    --primary: 160 100% 31%;        /* #0FA36B */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 160 84% 39%;   /* #10B981 */
+    
+    --secondary: 160 84% 39%;       /* #10B981 */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 38 92% 50%;           /* #F59E0B */
+    --accent-foreground: 0 0% 100%;
+    
+    --danger: 348 83% 47%;          /* #F43F5E */
+    --danger-foreground: 0 0% 100%;
+    
+    --success: 160 100% 31%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Neutral Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 220 14% 11%;      /* Slate 900 */
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 220 14% 11%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 220 14% 11%;
+    
+    --muted: 220 13% 96%;           /* Slate 100 */
+    --muted-foreground: 220 9% 46%; /* Slate 600 */
+    
+    --border: 220 13% 91%;          /* Slate 200 */
+    --input: 220 13% 91%;
+    --ring: 160 100% 31%;
+    
+    /* Destructive using danger color */
+    --destructive: 348 83% 47%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Marketplace specific */
+    --promo-bg: 38 92% 95%;         /* Amber tint */
+    --flash-sale: 0 84% 60%;        /* Red for urgency */
+    --rating-star: 38 92% 50%;      /* Amber for ratings */
+    --discount-bg: 348 83% 47%;     /* Danger red for discounts */
+    
+    /* Shadows & Effects */
+    --shadow-soft: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    
+    --radius: 1rem;                 /* 16px for cards */
+    --radius-lg: 1.25rem;          /* 20px for larger cards */
 
     --sidebar-background: 0 0% 98%;
 
